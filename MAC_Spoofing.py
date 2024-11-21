@@ -23,9 +23,9 @@ def get_mac():
 
 print('Welcome to the program!')
 choice = ''
-while choice.lower() not in ['y', 'n'] and choice.upper not in ['Y', 'N']:
+while choice.lower() not in ['y', 'n']:
     choice = input('Would you like to access the network (Y/n): ')
-    if choice.lower() not in ['y', 'n'] and choice.upper not in ['Y', 'N']:
+    if choice.lower() not in ['y', 'n']:
         print('Invalid input')
 
 if choice.lower() == 'y':
