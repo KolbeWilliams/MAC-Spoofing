@@ -23,12 +23,12 @@ def get_mac():
 
 print('Welcome to the program!')
 choice = ''
-while choice.lower().strip() not in ['y', 'n']:
-    choice = input('Would you like to access the network (Y/n): ')
-    if choice.lower().strip() not in ['y', 'n']:
+while choice not in ['y', 'n']:
+    choice = input('Would you like to access the network (Y/n): ').lower().strip()
+    if choice not in ['y', 'n']:
         print('Invalid input')
 
-if choice.lower() == 'y':
+if choice == 'y':
     # Obtain MAC address of adapter
     mac_address = get_mac()
     if mac_address:
